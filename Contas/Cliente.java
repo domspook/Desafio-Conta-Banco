@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public class Cliente {
 
-    private String nome;
-    private List<Conta> contas;
+    private String nome; // Nome do cliente
+    private List<Conta> contas; // Lista de contas associadas ao cliente
 
 }
