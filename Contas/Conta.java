@@ -1,3 +1,8 @@
+package Contas;
+
+import lombok.Data;
+
+@Data
 public abstract class Conta implements IConta {
 
     private static int SEQUENCIAL = 1;
@@ -27,19 +32,6 @@ public abstract class Conta implements IConta {
     public void transferir(double valor, Conta contaDestino) {
         this.sacar(valor);
         contaDestino.depositar(valor);
-    }
-
-
-    public int getAgencia() {
-        return agencia;
-    }
-
-    public int getNumeroConta() {
-        return numeroConta;
-    }
-
-    public double getSaldo() {
-        return saldo;
     }
 
 

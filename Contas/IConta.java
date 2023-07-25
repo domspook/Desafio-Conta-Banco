@@ -1,3 +1,7 @@
+package Contas;
+
+import Contas.Conta;
+
 public interface IConta {
 
     void imprimirExtrato();
